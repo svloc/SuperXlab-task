@@ -7,7 +7,6 @@
 }
 .title-wrapper {
   padding-top: 25px;
- 
 }
 .title-text {
   text-align: center;
@@ -18,37 +17,37 @@
   flex: auto;
 }
 .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-    background: antiquewhite;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background: antiquewhite;
 }
 .wrapper-btn {
   text-align-last: right;
   margin-right: 20px;
 }
-.total-wrapper{
-    position: relative;
-    display: flex;
-    top: 18%;
-    justify-content: space-between;
-    background: antiquewhite;
+.total-wrapper {
+  position: relative;
+  display: flex;
+  top: 18%;
+  justify-content: space-between;
+  background: antiquewhite;
 }
 
-.total{
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
+.total {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 .ac-wrapper {
-    display: flex;
-    margin-top: 35px;
+  display: flex;
+  margin-top: 35px;
 }
-.ac-name{
- flex: auto;
- margin-left: 20px;
+.ac-name {
+  flex: auto;
+  margin-left: 20px;
 }
-.date-wrapper{
- text-align-last: right;
+.date-wrapper {
+  text-align-last: right;
 }
 .title-btn {
   background-color: blueviolet;
@@ -58,15 +57,14 @@
   border-radius: 5px;
   margin-right: 20px;
 }
-   
+
 .button.button-small {
   padding: 0px 10px;
 }
 
-td input[type=text] {
+td input[type="text"] {
   width: 100%;
   height: 30px;
   margin: 0;
   padding: 2px 8px;
 }
-
