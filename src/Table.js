@@ -45,7 +45,7 @@ export default function Table() {
         fetchProductData('products2');
         fetchProductData('products3');
         fetchProductData('products4');
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    }, []); 
 
     const fetchProductData = (productStateKey) => {
         productService.getProductsSmall().then(data => dataTableFuncMap[`${productStateKey}`](data));
