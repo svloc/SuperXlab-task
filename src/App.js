@@ -2,6 +2,14 @@ import React, { useState } from "react";
 
 import "./style.css";
 import Table from "./Table";
+
+import "primereact/resources/themes/lara-light-indigo/theme.css";     
+    
+//core
+import "primereact/resources/primereact.min.css";                                       
+        
+// import "primeicons/primeicons.css";   
+
 export default function App() {
   const [toggle, setToggle] = useState(true);
 
