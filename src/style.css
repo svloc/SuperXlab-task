@@ -1,11 +1,8 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700");
-<<<<<<< HEAD
 @import 'primereact/resources/themes/saga-blue/theme.css';
 @import 'primereact/resources/primereact.min.css';
 @import 'primeicons/primeicons.css';
-=======
->>>>>>> ef6414f51a8aa1a88dab28d3be61809768e8d211
 
 *,*::after,*::before{
   margin: 0;

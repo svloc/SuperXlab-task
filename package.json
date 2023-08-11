@@ -3,12 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "primeicons": "^5.0.0",
-    "primereact": "^7.0.1",
-=======
     "primereact": "^9.6.1",
->>>>>>> ef6414f51a8aa1a88dab28d3be61809768e8d211
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-transition-group": "^4.4.2"
