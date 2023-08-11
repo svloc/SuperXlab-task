@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./style.css";
 import Table from "./Table";
 export default function App() {
@@ -8,6 +9,9 @@ export default function App() {
     <>
       <div className="main d-flex flex-column ">
         <aside className="d-flex w-100">
+
+          {/* sidebar Start */}
+
           <div className={toggle ? "sidebar left" : "sidebar fliph left"}>
             <div className="bar-btn position-absolute text-right"> </div>
             <ul className="list-sidebar bg-default list-unstyled">
@@ -104,7 +108,12 @@ export default function App() {
               </li>
             </ul>
           </div>
+
+          {/* sidebar End */}
+
           <div className="d-flex w-100 flex-column">
+
+            {/* header statr */}
             <div className="sidebar-header d-flex justify-content-between  align-items-center w-100">
               <div className="t-dropdown position-relative">
                 <p className="text-dropdown mb-0 ml-4">Text</p>
@@ -130,9 +139,12 @@ export default function App() {
                 </div>
               </div>
             </div>
+            {/* header End */}
+
             <div>
               <Table />
             </div>
+            
           </div>
         </aside>
       </div>
