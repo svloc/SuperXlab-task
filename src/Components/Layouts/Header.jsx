@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import './Layout.css';
 function Header() {
   return (
     <div className="sidebar-header d-flex justify-content-between  align-items-center w-100">
