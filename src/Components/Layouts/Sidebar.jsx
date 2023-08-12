@@ -1,106 +1,41 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './Layout.css';
+
+const sidebarItems = [
+  { icon: 'fa fa-th-large', label: 'Item 1' },
+  { icon: 'fa fa-book', label: 'Item 2' },
+  { icon: 'fa fa-book', label: 'Item 3' },
+  { icon: 'fa fa-user', label: 'Item 4' },
+  { icon: 'fa fa-home', label: 'Item 5' },
+  { icon: 'fa fa-credit-card-alt', label: 'Item 6' },
+  { icon: 'fa fa-file-text', label: 'Item 7' },
+  { icon: 'fa fa-file-video-o', label: 'Item 8' },
+  { icon: 'fa fa-birthday-cake', label: 'Item 9' },
+  { icon: 'fa fa-users', label: 'Item 10' }
+];
 
 function Sidebar() {
   const [toggle, setToggle] = useState(true);
+
   return (
-    <div className={toggle ? "sidebar left" : "sidebar fliph left"}>
-      <div className="bar-btn position-absolute text-right"> </div>
-      <ul className="list-sidebar bg-default list-unstyled">
+    <div className={toggle ? "sidebar h-100 bg-bluegray-900 left" : "sidebar bg-bluegray-900 h-100 fliph left"}>
+      <ul>
         <li>
-
-          {toggle ? (
-            <a
-
-              className=" nav-link d-flex justify-content-end align-items-center"
-              onClick={() => setToggle(!toggle)}
-            >
-              <i className="fa fa-angle-double-left"></i>
+          <a className="p-3 d-flex justify-content-end align-items-center cursor-pointer" onClick={() => setToggle(!toggle)}>
+            <i className={`fa ${toggle ? 'fa-angle-double-left' : 'fa-angle-double-right'}`}></i>
+          </a>
+        </li>
+        {sidebarItems.map((item, index) => (
+          <li key={index}>
+            <a className="p-3 text-base d-block  cursor-pointer">
+              <i className={item.icon}></i>
+              <span className="nav-label">{item.label}</span>
             </a>
-          ) : (
-            <a
-
-              className=" nav-link d-flex justify-content-end align-items-center"
-              onClick={() => setToggle(!toggle)}
-            >
-              <i className="fa fa-angle-double-right"></i>
-            </a>
-          )}
-        </li>
-        <li>
-
-          <a className="collapsed active nav-link">
-
-            <i className="fa fa-th-large"></i>
-            <span className="nav-label"> Item 1</span>
-          </a>
-        </li>
-        <li>
-
-          <a className="nav-link">
-            <i className="fa fa-book"></i>
-            <span className="nav-label">Item 2</span>
-          </a>
-        </li>
-        <li>
-
-          <a className="nav-link">
-            <i className="fa fa-book"></i>
-            <span className="nav-label">Item 3</span>
-          </a>
-        </li>
-        <li>
-
-          <a className="nav-link">
-            <i className="fa fa-user"></i>
-            <span className="nav-label">Item 4</span>
-          </a>
-        </li>
-        <li>
-
-          <a className="nav-link">
-            <i className="fa fa-home"></i>
-            <span className="nav-label">Item 5 </span>
-          </a>
-        </li>
-        <li>
-
-          <a>
-            <i className="fa fa-credit-card-alt"></i>
-            <span className="nav-label">Item 6 </span>
-          </a>
-        </li>
-        <li>
-
-          <a>
-            <i className="fa fa-file-text"></i>
-            <span className="nav-label">Item 7 </span>
-          </a>
-        </li>
-        <li>
-
-          <a>
-            <i className="fa fa-file-video-o"></i>
-            <span className="nav-label">Item 8 </span>
-          </a>
-        </li>
-        <li>
-
-          <a>
-            <i className="fa fa-birthday-cake"></i>
-            <span className="nav-label">Item 9 </span>
-          </a>
-        </li>
-        <li>
-
-          <a>
-            <i className="fa fa-users"></i>
-            <span className="nav-label">Item 10 </span>
-          </a>
-        </li>
+          </li>
+        ))}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
