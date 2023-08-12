@@ -1,24 +1,18 @@
 import React from 'react'
 import Sidebar from '../../Layouts/Sidebar'
 import Header from '../../Layouts/Header'
-import Table from '../../../Table'
+import Line from '../../HelperComponents/Chart/Line';
+import Radar from '../../HelperComponents/Chart/Radar';
+import Linebar from '../../HelperComponents/Chart/Linebar';
 import HeaderCard from '../../HelperComponents/HeaderCard'
 
 function Dashboard() {
   return (
-    <div className="main d-flex flex-column ">
-      <aside className="d-flex w-100">
-
-        <Sidebar />
-
-        <div className="d-flex w-100 flex-column">
-          <Header />
-          <div>
-            <HeaderCard />
-          </div>
-
-        </div>
-      </aside>
+    <div className='p-4'>
+      <HeaderCard />
+      <Line />
+      <Radar />
+      <Linebar />
     </div>
   )
 }
